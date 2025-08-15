@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import bgPattern from "../assets/down.png"; // your background pattern
-
+import i1 from '../assets/i1.png'
 const data = [
   {
-    image: "https://picsum.photos/id/1015/800/600",
+    image: i1,
     title: "Our Core Capabilities",
     subtitle: "What We Do",
     text: "We work with organizations navigating pivotal decisions whether evolving their business, mitigating risk, or pursuing strategic transactions. Our work is anchored in clarity, discretion, and measurable outcomes."

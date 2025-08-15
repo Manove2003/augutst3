@@ -3,18 +3,23 @@ import React from "react";
 import { TracingBeam } from "./tracing-beam"; // import your animation
 import { FaPlay } from "react-icons/fa";
 
+import h2 from "../assets/h2.png"
+import h3 from "../assets/h3.png"
+import h4 from "../assets/h4.png"
+
+
 const TimelineSection = () => {
   return (
     <>
     <div className="bg-[#0f1a2c] text-white py-16 px-4">
       {/* Section Header */}
       <div className="text-center max-w-2xl mx-auto mb-12">
-        <p className="text-gray-400 text-sm tracking-widest uppercase">
+        <p className="text-[#8B8FA8] text-base tracking-widest uppercase">
           The Lev Difference
         </p>
         <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-          We turn <span className="text-purple-400">ideas into action</span>,<br />
-          actions into <span className="text-purple-400">results</span>
+          We turn <span className="text-[#7B7D97]">ideas into action</span>,<br />
+          actions into results
         </h2>
       </div>
 
@@ -28,7 +33,7 @@ const TimelineSection = () => {
             bg-white z-10 border-4 border-[#0f1a2c] shadow" /> */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="https://picsum.photos/id/1015/800/600"
+              src={h2}
               alt="Leadership"
               className="rounded-lg shadow-lg h-60 w-full max-w-md"
             />
@@ -54,7 +59,7 @@ const TimelineSection = () => {
             bg-white z-10 border-4 border-[#0f1a2c] shadow" /> */}
           <div className="md:order-2 flex justify-center md:justify-start">
             <img
-              src="https://picsum.photos/id/1018/800/600"
+              src={h3}
               alt="Precision"
               className="rounded-lg h-60 shadow-lg w-full max-w-md"
             />
@@ -82,7 +87,7 @@ const TimelineSection = () => {
             bg-white z-10 border-4 border-[#0f1a2c] shadow" /> */}
           <div className="flex justify-center md:justify-end pt-4">
             <img
-              src="https://picsum.photos/id/1025/800/600"
+              src={h4}
               alt="Solutions"
               className="rounded-lg shadow-lg w-full max-w-md h-60"
             />
@@ -110,7 +115,7 @@ const TimelineSection = () => {
 
 
      <div className=" flex flex-col  items-center justify-center bg-[#3D3E56] py-12">
-         <h1 className="text-3xl md:text-5xl text-[FFFFFF] py-4 font-bold"> 
+         <h1 className="text-3xl md:text-5xl text-[#FFFFFF] py-4 font-bold"> 
             Connect With <span className="text-[#7B7D97]">Our Experts</span>         </h1>
             <p className="text-[#F5F5F5] text-xl py-6">Discover tailored insights to elevate your business.</p>
             <button className="bg-[#191A2F] py-2 mt-4 px-6  text-[#FFFFFF]">

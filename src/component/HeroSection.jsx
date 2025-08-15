@@ -4,17 +4,17 @@ import { motion } from "motion/react";
 import logo from "../assets/logo.png";
 import enable from "../assets/enable.png";
 import bgRight from "../assets/Group.png";
-
+import h1 from '../assets/h1.png'
 const HeroSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [desktopServicesOpen, setDesktopServicesOpen] = useState(false);
 
   const servicesList = [
-    "Web Development",
-    "Mobile Apps",
-    "Digital Marketing",
-    "UI/UX Design",
+    "Business Reinvention Services",
+    "Integrity Assurance Solutions",
+    "Mergers & Acquisitions (M&A) Advisory",
+    
   ];
 
   return (
@@ -27,16 +27,15 @@ const HeroSection = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-lg items-center relative">
-          <li className="hover:text-gray-300 cursor-pointer">Home</li>
-          <li className="hover:text-gray-300 cursor-pointer">About</li>
-
+          <li className="hover:text-gray-300 cursor-pointer">General Inquiry</li>
           {/* Clickable Services */}
           <li className="relative">
             <button
               onClick={() => setDesktopServicesOpen(!desktopServicesOpen)}
               className="hover:text-gray-300 cursor-pointer focus:outline-none"
             >
-              Services {desktopServicesOpen ? "▲" : "▼"}
+              Services 
+              {/* {desktopServicesOpen ? "▲" : "▼"} */}
             </button>
             {desktopServicesOpen && (
               <ul className="absolute left-0 top-full bg-[#1e293b] text-sm rounded shadow-lg mt-2">
@@ -51,6 +50,9 @@ const HeroSection = () => {
               </ul>
             )}
           </li>
+          <li className="hover:text-gray-300 cursor-pointer">Partnership Opportunities</li>
+          <li className="hover:text-gray-300 cursor-pointer">Media or Press Inquiry</li>
+
         </ul>
 
         <button className="hidden md:block bg-gray-200 text-black px-4 py-2 rounded hover:bg-gray-300">
@@ -121,7 +123,7 @@ const HeroSection = () => {
           className="w-full md:w-1/2 flex justify-center"
         >
           <img
-            src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29"
+            src={h1}
             alt="Bridge"
             className="h-[300px] sm:h-[400px] md:h-[500px] w-full rounded-lg shadow-lg object-cover"
           />
@@ -139,10 +141,14 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <TextGenerateEffect
-            words="Elevating ambition into action in dynamic environments"
-            className="text-2xl sm:text-3xl md:text-5xl leading-tight"
-          />
+        <TextGenerateEffect
+  segments={[
+    { text: "Elevating ambition into action", className: "text-white" },
+    { text: "in dynamic environments", className: "text-[#8B8FA8]" },
+  ]}
+  className="text-2xl sm:text-3xl md:text-5xl leading-tight"
+/>
+
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
